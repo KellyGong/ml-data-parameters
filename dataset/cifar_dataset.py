@@ -61,7 +61,7 @@ class CIFAR100WithIdx(CIFAR100):
         Returns:
             tuple: (sample, target, index) where index is the index of this sample in dataset.
         """
-        img, target = super().__getitem__(index)
+        index, img, target = super().__getitem__(index)
         return img, target, index
 
 

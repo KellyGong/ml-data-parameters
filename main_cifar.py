@@ -27,7 +27,7 @@ parser.add_argument('--epochs', default=120, type=int, metavar='N',
                     help='number of total epochs to run')
 parser.add_argument('--start-epoch', default=0, type=int, metavar='N',
                     help='manual epoch number (useful on restarts)')
-parser.add_argument('--restart', default=False, const=True, action='store_const',
+parser.add_argument('--restart', default=True, const=True, action='store_const',
                     help='Erase log and saved checkpoints and restart training')
 parser.add_argument('-b', '--batch-size', default=128, type=int,
                     metavar='N', help='mini-batch size (default: 128)')
